@@ -6,8 +6,7 @@ from tensorflow.keras.models import load_model
 import tensorflow as tf
 
 # Load the trained model
-model_path = r'E:\DUK\SEM 3\Deep Learning\deep-learning\CNN\tumor_detection\results\model\cnn_tumor.h5'
-model = load_model(model_path)
+model = load_model("cnn_tumor.h5")
 
 # Function to make predictions
 def make_prediction(img, model):
